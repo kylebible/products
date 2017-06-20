@@ -12,9 +12,9 @@ app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, '/public/dist')))
 
-const port = process.env.PORT || 8000
+const port = 8000
 
-mongoose.connect('mongodb://kbible:Bo0m3r1217!@ds133582.mlab.com:33582/meandeployapp');
+mongoose.connect('mongodb://localhost/product');
 
 mongoose.Promise = global.Promise
 
