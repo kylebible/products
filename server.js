@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, '/public/dist')))
 
 const port = process.env.PORT || 8000
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/product_mean_test');
+mongoose.connect('mongodb://kbible:Bo0m3r1217!@ds133582.mlab.com:33582/meandeployapp');
 
 mongoose.Promise = global.Promise
 
